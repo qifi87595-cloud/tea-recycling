@@ -1,26 +1,109 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: #1B4332;
+  --color-primary-light: #2D6A4F;
+  --color-secondary: #8B5A2B;
+  --color-accent: #D4A574;
+  --color-accent-light: #E8C9A0;
+  --color-cream: #FDFBF7;
+  --color-cream-dark: #F5F0E8;
+  --color-text: #2D2D2D;
+  --color-text-light: #6B6B6B;
+  --color-leaf: #5B8C5A;
+  --color-leaf-light: #E8F5E9;
+  --color-gold: #B8860B;
+
+  --font-sans: "Noto Sans SC", system-ui, -apple-system, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #FDFBF7;
+  --foreground: #2D2D2D;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Noto Sans SC", system-ui, -apple-system, sans-serif;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+  border-radius: 4px;
+}
+
+/* Animations */
+@keyframes breathe-scale {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 12px rgba(7, 193, 96, 0.3);
+  }
+  50% {
+    transform: scale(1.15);
+    box-shadow: 0 6px 24px rgba(7, 193, 96, 0.5);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes leafFall {
+  0% { transform: rotate(0deg) translateY(-10px); opacity: 0; }
+  50% { opacity: 0.6; }
+  100% { transform: rotate(180deg) translateY(60px); opacity: 0; }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out both;
+}
+
+/* Decorative leaf pattern */
+.leaf-decoration {
+  position: relative;
+  overflow: hidden;
+}
+.leaf-decoration::before {
+  content: "🍃";
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.08;
+  animation: leafFall 8s ease-in-out infinite;
+}
+
+/* Glass morphism card */
+.glass-card {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a1a1a;
+    --foreground: #f0f0f0;
+  }
 }

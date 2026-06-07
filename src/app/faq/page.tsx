@@ -8,7 +8,7 @@ const faqs = [
     items: [
       {
         q: "如何联系杨记茶叶进行回收？",
-        a: "您可以通过以下方式联系我们：拨打热线电话 138-0013-8000、发送邮件至 service@yangjitea.com，或直接在网站首页填写手机号，我们的客服会在30分钟内与您联系。",
+        a: "您可以通过以下方式联系我们：拨打热线电话 176-0010-0747、发送邮件至 service@yangjitea.com，或直接在网站首页填写手机号，我们的客服会在30分钟内与您联系。",
       },
       {
         q: "回收流程是怎样的？",
@@ -203,7 +203,7 @@ export default function FAQPage() {
               我们的客服团队随时为您提供一对一解答
             </p>
             <a
-              href="tel:13800138000"
+              href="tel:17600100747"
               className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-medium rounded-xl hover:bg-primary-light transition-colors shadow-sm"
             >
               <svg
@@ -219,7 +219,7 @@ export default function FAQPage() {
                   d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                 />
               </svg>
-              拨打 138-0013-8000
+              拨打 176-0010-0747
             </a>
           </div>
         </div>

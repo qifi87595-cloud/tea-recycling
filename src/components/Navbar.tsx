@@ -48,7 +48,7 @@ export default function Navbar() {
               );
             })}
             <a
-              href="tel:13800138000"
+              href="tel:17600100747"
               className="ml-4 px-5 py-2.5 bg-primary text-white text-sm font-medium rounded-full hover:bg-primary-light transition-colors shadow-sm"
             >
               联系我们
@@ -107,7 +107,7 @@ export default function Navbar() {
             );
           })}
           <a
-            href="tel:13800138000"
+            href="tel:17600100747"
             className="block px-4 py-3 rounded-lg bg-primary text-white text-sm font-medium text-center"
           >
             联系我们

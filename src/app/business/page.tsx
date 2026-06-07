@@ -133,7 +133,7 @@ export default function BusinessPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:13800138000"
+              href="tel:17600100747"
               className="inline-flex items-center justify-center gap-2 px-8 py-3.5 bg-primary text-white font-medium rounded-xl hover:bg-primary-light transition-colors shadow-sm"
             >
               <svg
